@@ -83,6 +83,34 @@
     }
     
 }
-.ex-12-button:hover{
-    
+.ex-12-button:hover .ex-12-top-white{
+        animation-name:trasla-dx;
+        animation-duration:1.5s;
+        animation-timing-function: linear;
 }
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name:trasla-sx;
+        animation-duration:1.5s;
+        animation-timing-function: linear;
+}
+@keyframes trasla-dx{
+    0%{
+    }
+    50%{
+        left:69%;
+    }
+    100%{
+        left:10%;
+    }
+}
+@keyframes trasla-sx{
+    0%{
+    }
+    50%{
+        right:69%;
+    }
+    100%{
+        right:20%;
+    }
+}
+
